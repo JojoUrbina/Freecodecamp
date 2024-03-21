@@ -1,0 +1,64 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 22, 38 , 85%);
+    text-align: center; /* Centra horizontalmente los elementos del cuerpo */
+    overflow-x: hidden;
+}
+
+.container {
+    margin-top: 100px;
+    width: 80%; /* Se ajusta el ancho del contenedor para mejorar la legibilidad */
+    max-width: 600px; /* Se establece un ancho máximo para evitar que el formulario se vuelva demasiado ancho en pantallas grandes */
+    background-color: rgba(101, 117, 139, 0.9); /* Se aumenta la opacidad del color de fondo para mejorar la legibilidad del texto */
+    padding: 50px;
+    border-radius: 10px; /* Se agrega un radio de borde para suavizar las esquinas del contenedor */
+    display: inline-block; /* Hace que el contenedor se comporte como un bloque en línea */
+    text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+    box-shadow: 0 0 8px 2px black;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Se agrega un margen inferior para separar el encabezado del formulario */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Se agrega un espacio entre cada grupo de elementos del formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Se agrega un espacio entre las etiquetas y los campos de entrada */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%; /* El ancho del campo de entrada es igual al ancho del contenedor */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Esto asegura que el padding se incluya en el ancho total */
+}
+
+.radio-group {
+    margin-bottom: 10px; /* Se agrega un espacio entre los grupos de botones de radio */
+}
+
+button[type="submit"] {
+    width: 100%; /* El botón ocupa todo el ancho disponible */
+    padding: 10px 11px; /* Se ajusta el padding horizontalmente para compensar el borde */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Se cambia el color de fondo al pasar el cursor sobre el botón */
+}
