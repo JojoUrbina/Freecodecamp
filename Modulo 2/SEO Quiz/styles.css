@@ -34,3 +34,13 @@ body {
     display: flex;
     justify-content: space-evenly;
   }
+  
+  h1,
+  h2 {
+    font-family: Verdana, Tahoma;
+  }
+  
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+  }
+  
