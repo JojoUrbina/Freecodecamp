@@ -1,0 +1,43 @@
+*{
+    box-sizing:border-box;
+    
+  }
+  html{
+    background-color:#ffffff;
+    color:#4d4e53;
+    font-family:Open Sans,arial;
+    line-height:1.5;
+  }
+  header{
+    
+    color: black;
+    font-size: 25px;
+  }
+  nav{
+    position:fixed;
+    width:300px;
+    height:100%;
+    left:0px;
+  }
+  nav ul{
+    height:88%;
+    display:block;
+    overflow-y:scroll;
+    margin-left:0px;
+    padding:0px;
+  }
+  nav ul li{
+    padding:10px 20px;
+    border-top:1px solid gray;
+    list-style-type: none;
+    margin-left:0px;
+  }
+  a{
+    text-decoration: none;
+    color: #4d4e53;
+  } 
+  main{
+    position:absolute;
+    left:350px;
+    padding:15px; 
+  }
