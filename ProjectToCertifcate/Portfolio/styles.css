@@ -1,0 +1,156 @@
+:root{
+    --primero-color:#F9F7F7;
+    --segundo-color:#DBE2EF;
+    --tercero-color:#3F72AF;
+    --cuarto-color:#112D4E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+html{
+    font-size: 17px;
+    color: black;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--primero-color);
+    font-family: Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #3F72AF;
+    width: 100%;
+    top:0
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    
+   
+}
+li{
+    padding: 20px;
+}
+li:hover,a:hover{
+    background-color: var(--segundo-color);
+    color: var(--cuarto-color);
+}
+/*end nav bar*/
+
+/*Section welcome*/
+ #welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--segundo-color);
+    height:100vh;
+    font-size: 2rem;
+}
+#welcome-section p{
+color: #3F72AF;
+}
+/* end section welcomen*/
+/* Section projects*/
+#projects{
+    background-color: #3F72AF;
+    text-align: center;
+    
+}
+#projects h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9F7F7;
+border-bottom: 2px solid #112D4E;
+font-size: 3rem;
+height: 30vh;
+
+
+}
+.grid{
+    display: grid;
+    gap:40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    height: 70vh;
+}
+.grid a {
+    display: block;
+  
+  width: 380px;
+  height: 380px;
+  background-color: #112D4E;
+  box-shadow: 1px 1px 5px black;
+  
+}
+.grid a img{
+    max-width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.grid h3{
+
+    display: block;
+    margin: auto;
+    padding-top:10px;
+  color: #F9F7F7;
+}
+/*end section work*/
+/* Section Contact*/
+#contact{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #DBE2EF;
+}
+#contact h2{
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+#contact p{
+    text-align: center;
+}
+#links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+#links a{
+    display: block;
+    font-size: 1.8rem;
+    padding: 20px;
+    margin: auto;
+    
+}
+#links i{
+    margin-right: 5px;
+}
+footer{
+    height: 10vh;
+    background-color: #3F72AF;
+}
+footer p{
+    bottom: 0;
+    text-align: end;
+    font-size: 1.1rem;
+    padding: 1rem 1rem 0 0;
+}
+@media (max-width:750px){
+    .grid{
+        display: grid; gap: 40px; grid-template-columns: 1fr; justify-items: center; 
+        height: initial; 
+}
+}
+
