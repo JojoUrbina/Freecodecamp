@@ -98,6 +98,8 @@ const playSong = (id) => {
   userData.currentSong = song;
   playButton.classList.add("playing");
 
+  highlightCurrentSong();
+  setPlayerDisplay();
   audio.play();
 };
 
@@ -129,13 +131,27 @@ const playPreviousSong = () => {
    }
 };
 
+const setPlayerDisplay = () => {
+  const playingSong = document.getElementById("player-song-title");
+  const songArtist = document.getElementById("player-song-artist");
+  const currentTitle = userData?.currentSong?.title;
+  const currentArtist = userData?.currentSong?.artist;
+
+  playingSong.textContent = currentTitle ? currentTitle : "";
+  songArtist.textContent = currentArtist ? currentArtist : "";
+};
+
 const highlightCurrentSong = () => {
   const playlistSongElements = document.querySelectorAll(".playlist-song");
   const songToHighlight = document.getElementById(
     `song-${userData?.currentSong?.id}`
   );
-  
 
+  playlistSongElements.forEach((songEl) => {
+    songEl.removeAttribute("aria-current");
+  });
+
+  if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
 };
 
 const renderSongs = (array) => {
@@ -159,6 +175,8 @@ const renderSongs = (array) => {
 
   playlistSongs.innerHTML = songsHTML;
 };
+
+
 
 const getCurrentSongIndex = () => userData?.songs.indexOf(userData?.currentSong);
 
