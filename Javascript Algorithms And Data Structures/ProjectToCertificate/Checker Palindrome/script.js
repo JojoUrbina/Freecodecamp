@@ -5,23 +5,22 @@ const result = document.getElementById("result");
 btn.addEventListener("click", isPalindrome);
 
 function isPalindrome() {
-  const palindromo = input.value;
-  const palindromoSinEspacios = palindromo
+    const inputValue = input.value.toUpperCase();
+    const inputValueWithoutSpace = inputValue
     .replace(/[,()-/._\s]/g, "")
-    .toLocaleLowerCase();
-  const palindromoSinEspaciosAlReves = palindromoSinEspacios
+  const inputValueWithoutSpaceBackwards = inputValueWithoutSpace
     .split("")
     .reverse()
     .join("");
 
-  if (palindromo === "") {
-    result.textContent = "Please input a value";
+  if (inputValueWithoutSpace ==="" ) {
+    alert("Please input a value");
     return;
   }
 
-  if (palindromoSinEspacios === palindromoSinEspaciosAlReves) {
-    result.textContent = `${palindromo} is a palindrome`;
+  if (inputValueWithoutSpace === inputValueWithoutSpaceBackwards) {
+    result.textContent = `${inputValue} IS A PALINDROME`;
   } else {
-    result.textContent = `${palindromo} is not a palindrome`;
+    result.textContent = `${inputValue} IS NOT A PALINDROME`;
   }
 }

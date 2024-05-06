@@ -13,21 +13,26 @@ html{
     font-size: 20px;
 }
 body{
-    background-color: var(--white-color);
-    
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 h1{
     margin: 20px;
     text-align:center;
+   
+}
+main{
+    margin-top: 50px;
 }
 #container{
     width:400px;
     min-height: 20vh;
-    background-color: #393E46;
+    background-color: var(--gray-color);
     margin: 30px auto;
-    color: var(--white-color);
+    
     padding: 10px;
     text-align: center;
+    border-radius: 20px;
 }
 input{
     margin: 20px 10px;
@@ -35,5 +40,13 @@ input{
     text-align: left;
 }
 button{
-    
+    padding: 2px;
+    width: 70px;
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    color: white;
+}
+#result{
+    text-align: center;
+    font-size: 1.4rem;
 }
