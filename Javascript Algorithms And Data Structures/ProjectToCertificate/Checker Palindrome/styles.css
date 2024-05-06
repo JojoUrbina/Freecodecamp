@@ -38,9 +38,10 @@ input{
     margin: 20px 10px;
     width: 250px;
     text-align: left;
+    padding: 4px;
 }
 button{
-    padding: 2px;
+    padding: 4px;
     width: 70px;
     background-color: var(--blue-color);
     border-radius: 5px;
@@ -49,4 +50,15 @@ button{
 #result{
     text-align: center;
     font-size: 1.4rem;
+}
+#example{
+    width: 400px;
+    min-height: 10vh;
+    font-size: 0.8rem;
+    background-color: #673ab763;
+    margin: 40px auto;
+    padding: 15px;
+    border-radius: 20px;
+   
+    font-weight: 550;
 }
